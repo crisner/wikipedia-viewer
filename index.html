@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wikipedia viewer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
     <script
   src="http://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -12,22 +15,23 @@
     
 </head>
 <body>
-    <header>
-        <form>
-            <label for="search"></label>
-            <input id="search" type="text" name="query">
-            <input id="submit" type="submit" value="search">
-            <input id="random" type="submit" value="Get a random article">
-        </form>
-    </header>
-    <main>
-    </main>
-    <footer>
-        <small>Made by Renisha Christie</small>
-    </footer>
+    <div class="container">
+        <header class="centered">
+            <form>
+                <label for="search"></label>
+                <input id="search" type="text" name="query"  placeholder="Search wiki" autocomplete="off">
+                <input id="submit" type="submit" value="search">
+                <input id="refresh" type="submit" value="&#8634"></br>
+                <input id="random" type="submit" value="Get something random" class="randomsize">
+            </form>
+        </header>
+        <main>
+        </main>
+        <footer class="bottom">
+            <small>Made by Renisha Christie</small>
+        </footer>
+    </div>
 
     <script src="js/index.js"></script>
 </body>
 </html>
-
-<!-- action="https://en.wikipedia.org/w/api.php" method="get" -->
