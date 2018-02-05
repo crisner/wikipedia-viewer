@@ -21,6 +21,7 @@
 
         // Retrieve data and alter appearance on clicking the submit button 
         $("#submit").on("click", function(e) {
+            $("#submit").css("display", "none");
             $("#search").addClass("size");
             $("header").addClass("move");
             $("#refresh").addClass("reset");
